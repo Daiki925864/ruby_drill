@@ -1,26 +1,23 @@
-class Article
+# 問題
+# 国語が80点、英語が50点、数学が70点の場合のテストの平均点をターミナルに出力するプログラムを記述してください。
 
-  def initialize(author, title, content)
-    @author = author
-    @title = title
-    @content = content
-  end
+# 条件1：このプログラムでは各教科の点数を変数を使って定義してください。
+# 条件2：出力結果は以下のようになるようにコードを書きましょう。
 
-  def author
-    @author
-  end
+# ターミナル
+# 1 ３教科の平均点は、◯点です。
+# ※◯の箇所には計算した平均点が入ります。
 
-  def title
-    @title
-  end
+# 出力にはputsを使います。putsのあとに半角スペースと出力したい文字列を続けることで、文字をターミナルに出力できます。
 
-  def content
-    @content
-  end
+# puts "出力したい文字列"
 
-end
+# -----------------------------------------------------------------------------------------------------------
 
-article = Article.new("阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
-puts "著者: #{article.author}"
-puts "タイトル: #{article.title}"
-puts "本文: #{article.content}"
+japanese_score = 80
+english_score = 50
+math_score = 70
+
+average_score = (japanese_score + english_score + math_score) / 3
+
+puts "3教科の平均点は、#{average_score}点です。"
